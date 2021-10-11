@@ -1,0 +1,576 @@
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif
+}
+
+body::-webkit-scrollbar {
+	width: 10px;               /* width of the entire scrollbar */
+  }
+  body::-webkit-scrollbar-track {
+	background: rgb(0, 0, 0);        /* color of the tracking area */
+  }
+  body::-webkit-scrollbar-thumb {
+	background-color: rgb(255, 255, 255);    /* color of the scroll thumb */
+	border-radius: 20px;       /* roundness of the scroll thumb */
+	border: 3px solid rgb(0, 0, 0);  /* creates padding around scroll thumb */
+  }
+
+body {
+    position: relative;
+}
+
+.navbar{
+    box-shadow: 0px -1px 34px 4px rgba(0,0,0,0.30);
+    padding: 1px;
+}
+
+.navbar .brgyLogo {
+    height: 50px;
+    width: 50px;
+}
+
+.nav-link {
+    color: rgb(0, 0, 0);
+}
+
+.nav-link.active {
+    color: #045de9 !important;
+    background-color: transparent !important;
+    border-bottom: 5px solid #045de9 !important;
+}
+
+#home {
+    padding: 0;
+}
+
+#about {
+    padding-bottom: 50px;
+}
+
+#history {
+    background-color: rgb(255, 255, 255);
+    padding-top: 70px;
+    padding-bottom: 20px;
+    border-top: 7px solid rgb(1, 114, 206);
+}
+
+#location {
+    padding: 0 ;
+    background-color: #485461;
+    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+    border-top: 50px solid white;
+}
+
+#contact-us {
+    background-color: rgb(245, 155, 203);
+    padding: 0;
+}
+
+/* Home Section */
+.carousel-item img{
+    object-fit:cover;
+    height:580px !important;
+}
+.carousel-caption {
+	background: rgba(0, 0, 0, 0.459);
+	padding: 2rem 5rem 2rem 5rem;
+}
+
+.carousel-caption p {
+	font-size: 1.2rem;
+}
+
+
+/* About */
+.about .title {
+	text-align: center;
+	padding: 100px 0 0 0;
+}
+
+/* About: Demography */
+.demography {
+	padding: 30px 0 0 0;
+}
+.card {
+	width: 500px;
+	height: 260px;
+	box-shadow: 0 8px 16px -8px rgba(0,0,0,0.4);
+	border-radius: 6px;
+	overflow: hidden;
+	position: relative;
+	margin: 1.5rem;
+}
+
+.card h1 {
+  	text-align: center;
+}
+
+/* Slide Container */
+.card .additional {
+	position: absolute;
+	width: 170px;
+	height: 100%;
+	background-color: #00bfb2;
+	background-image: linear-gradient(315deg, #00bfb2 0%, #028090 74%);
+	transition: width 0.4s;
+	overflow: hidden;
+	z-index: 2;
+}
+
+.card .landarea {
+	background-color: #c11d38;
+	background-image: linear-gradient(315deg, #c11d38 0%, #ffc857 74%);
+}
+
+.card:hover .additional {
+	width: 100%;
+	border-radius: 0 5px 5px 0;
+}
+
+.card .additional .user-card {
+	width: 120px;
+	height: 100%;
+	position: relative;
+	float: left;
+}
+.card .additional .user-card img{
+	width:100px; 
+	height:100px;
+	margin-top:50%;
+	margin-left:25%;
+}
+
+
+/* Slide content */
+.card .additional .more-info {
+  width: 400px;
+  height: 100%;
+  float: left;
+  position: absolute;
+  left: 120px;
+  padding-top: 2.0rem;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+	.card .additional .more-info h1 {
+	margin-bottom: 1.5rem;
+	}
+	.card .additional .stats .fa{
+	font-size: 30px;
+	}
+
+/* demography: visible content */
+.card .general {
+  width: 320px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  box-sizing: border-box;
+  padding-top: 2.0rem;
+  text-align: center;
+}
+	.card .people {
+		color: #076660;
+	}
+	.card .land {
+		color: rgb(184, 62, 58);
+	}
+	.card .general .more {
+	position: absolute;
+	bottom: 0.4rem;
+	right: 1rem;
+	font-size: 1.5em;
+	}
+		.card .people .more {
+			color: #069c92;
+		}
+		.card .land .more{
+			color: rgb(219, 111, 108);
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* About: Barangay Officials */
+.about .brgy-officials .col2, .brgy-officials .col4{
+	padding: 50px 20px 20px 50px;
+}
+
+.about .brgy-officials .col1, .brgy-officials .col3{
+	padding: 20px;
+}
+	/* Barangay Officials: Img Card */
+	.about .brgy-officials .single-team{
+		padding-bottom: 70px;
+		margin-left: 50px;
+		position: relative;
+		overflow: hidden;
+		box-shadow: 0px 2px 15px 2px rgba(0,0,0,0.30);
+	}
+		.about .brgy-officials .team-img{
+			position: relative;
+			overflow: hidden;
+		}
+		.about .brgy-officials .card-img-top {
+			width: 100%;
+			height: 24vw;
+			object-fit: cover;
+		}
+		.about .brgy-officials .card-img-other {
+			width: 50%;
+			height: 17vw;
+			object-fit: cover;
+		}
+		.about .brgy-officials .team-img img{
+			width: 100%;
+			transition: .3s;
+		}
+		.about .brgy-officials .single-team:hover .team-img img {
+			transform: scale(1.1);
+		}
+		.about .brgy-officials .team-content {
+			height: 80px;
+			width: 100%;
+			position: absolute;
+			text-align: center;
+			overflow: hidden;
+			bottom: 0;
+			transition: all .4s;
+		}
+		.about .brgy-officials .single-team:hover .team-content{
+			height: 150px;
+		}
+		.about .brgy-officials .capt-content {
+			background-color: #045de9;
+			background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+		}
+		.about .brgy-officials .team-info {
+			padding: 10px 20px 5px 20px;
+			transition: all .5s;
+		}
+		.about .brgy-officials .single-team:hover .team-content{
+			background-color: #485461;
+    		background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+		}
+		.about .brgy-officials .single-team .team-content .team-info h3 {
+			text-transform: uppercase;
+			color: #fff;
+			font-size: 16px;
+			margin: 5px;
+		}
+		.about .brgy-officials .single-team:hover .team-info h3{
+			color: #26a7f1;
+		}
+		.about .brgy-officials .team-info p {
+			margin-top: 20px;
+			color: #fff;
+		}
+		.about .brgy-officials .single-team-text p{
+			margin-top: 5px;
+		}
+		.about .brgy-officials .social .fa{
+			border: 1px solid #fff;
+			padding: 8px;
+			font-size: 18px;
+			color: #fff;
+		}
+		.about .brgy-officials .social .fa:hover{
+			transform: scale(1.1);
+			color: #26a7f1;
+			border: 1px solid #26a7f1;
+		}
+
+
+
+
+
+
+
+
+
+/* History */
+.history-img {
+    width: 100%;
+}
+.history .col1 {
+    padding: 0
+}
+.history .col2 {
+    padding: 0 50px 0 50px;
+}
+
+/* Location */
+.location .title {
+    font-size: 2.3rem;
+    color: white;
+}
+.location .head{
+    text-align: center;
+    padding: 25px 0 0 0 ;
+}
+
+/* Contact Us Section */
+::placeholder {
+    color: rgb(255, 255, 255);
+    opacity: 1
+}
+
+.contact-us-form {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
+}
+
+/* Left */
+.contact-info {
+    padding: 3.5rem 0 2.2rem 3.9rem;
+    position: relative
+}
+    .contact-info .title {
+        color: #087eec;
+        font-size: 2.8rem;
+    }
+    .contact-info .text {
+        color: #333;
+        margin: 1.5rem 0 2rem 0;
+        font-size: 1.6rem;
+    }
+    .contact-info .info {
+        padding-left: 3.9rem;
+    }
+    .social-information {
+        display: flex;
+        color: #555;
+        margin: 0.7rem 0;
+        align-items: center;
+        font-size: 0.95rem
+    }
+        .social-information i {
+            font-size: 22px;
+            margin-bottom: 23px;
+            margin-right: 8px;
+            color: #3884ff
+        }
+
+    .social-media {
+        padding: 2rem 0 0 0
+    }
+        .social-media p {
+            color: #333
+        }
+        .social-icons {
+            display: flex;
+            margin-top: 0.5rem;
+        }
+        .social-icons a {
+            width: 35px;
+            height: 35px;
+            border-radius: 43px;
+            color: rgb(255, 255, 255);
+            background: linear-gradient(45deg, #6dcaff, #008cff);
+            text-align: center;
+            line-height: 35px;
+            margin-left: 1.0rem;
+            transition: 0.4s
+        }
+        .social-icons a:hover {
+            transform: scale(1.15)
+        }
+
+/* Right */
+.contact-info-form {
+    background-color: #045de9;
+    background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+    position: relative
+}
+
+.contact-info-form form {
+    padding: 3.5rem 2.2rem;
+    z-index: 10;
+    overflow: hidden;
+    position: relative
+}
+
+.contact-info-form .title {
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 1;
+    margin-bottom: 0.7rem
+}
+
+.contact-info-form .social-input-containers {
+    position: relative;
+    margin: 1rem 0
+}
+    .contact-info-form .social-input-containers .input {
+        width: 100%;
+        outline: none;
+        border: 2px solid #fafafa;
+        background: none;
+        padding: 0.6rem 1.2rem;
+        color: #fff;
+        font-weight: 500;
+        font-size: 0.95rem;
+        letter-spacing: 0.5px;
+        border-radius: 4px;
+        transition: 0.3s
+    }
+    .contact-info-form textarea.input {
+        padding: 0.8rem 1.2rem;
+        min-height: 150px;
+        border-radius: 4px;
+        resize: none;
+        overflow-y: auto
+    }
+
+.contact-info-form .btn {
+    padding: 0.6rem 1.3rem;
+    background-color: #fff;
+    border: 2px solid #fafafa;
+    font-size: 0.95rem;
+    color: #087eec;
+    line-height: 1;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 0
+}
+    .contact-info-form .btn:hover {
+        background-color: transparent;
+        color: #fff
+    }
+
+/* design */
+.circle {
+    border-radius: 50%;
+    background-color: #abe9cd;
+    background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%);
+    position: absolute
+}
+    .circle.one {
+        width: 130px;
+        height: 130px;
+        top: 130px;
+        right: -40px
+    }
+    .circle.two {
+        width: 80px;
+        height: 80px;
+        top: 10px;
+        right: 30px
+    }
+/* arrow */
+.contact-info-form:before {
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background-color: #00adfd;
+    transform: rotate(45deg);
+    bottom: 66px;
+    left: -13px
+}
+
+
+@media (max-width: 850px) {
+    .contact-us .form {
+        grid-template-columns: 1fr
+    }
+    .contact-info:before {
+        bottom: initial;
+        top: -75px;
+        right: 65px;
+        transform: scale(0.95)
+    }
+    .contact-info-form:before {
+        top: -13px;
+        left: initial;
+        right: 70px
+    }
+    .contact-us .big-circle {
+        bottom: 75%;
+        transform: scale(0.9) translate(-40%, 30%);
+        right: 50%
+    }
+    .contact-us .text {
+        margin: 1rem 0 1.5rem 0
+    }
+    .contact-us .social-media {
+        padding: 1.5rem 0 0 0
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-info:before {
+        display: none
+    }
+    .contact-us .big-circle {
+        display: none
+    }
+    .contact-us form,
+    .contact-info {
+        padding: 1.7rem 1.6rem
+    }
+    .contact-us .text,
+    .social-information,
+    .social-media p {
+        font-size: 0.8rem
+    }
+    .contact-us .title {
+        font-size: 1.15rem
+    }
+    .contact-us .social-icons a {
+        width: 30px;
+        height: 30px;
+        line-height: 30px
+    }
+    .contact-us .icon {
+        width: 23px
+    }
+    .contact-us .input {
+        padding: 0.45rem 1.2rem
+    }
+    .contact-us .btn {
+        padding: 0.45rem 1.2rem
+    }
+}
+
+
+/* Footer */
+footer {
+    background-color: #485461;
+    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+}
+
+.text-white {
+    font-size: 0.9rem;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    color:#00b7ff !important;
+}

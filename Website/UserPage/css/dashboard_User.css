@@ -1,0 +1,77 @@
+/* Highlight Side Nav: Dashboard */
+.fa-home{
+    border-radius: 0px 20px 20px 0px;
+    background-color: #045de9;
+    background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+}
+
+/* body bootstrap */
+.post-card, .notice-card .card-body {
+    box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.10);
+}
+
+.h7 {
+    font-size: 1.2rem;
+}
+
+@media (min-width: 992px) {
+    .gedf-main {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    .gedf-card {
+        margin-bottom: 20px;
+    }
+}
+
+/* Reset Bootstrap*/
+.dropdown-toggle::after {
+    content: none;
+    display: none;
+}
+
+
+/* Card Report Cases */
+.status-report {
+    background-color: #63a4ff;
+    background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
+}
+
+.card-report { 
+    border-radius: 10px;
+    padding: 10px;
+    /* margin: 10px 50px 10px 50px; */
+    text-align: center;
+}
+.active-report { 
+    background-color: #f9c1b1;
+    background-image: linear-gradient(315deg, #f9c1b1 0%, #fb8085 74%);
+}
+.total-report { 
+    background-color: #63a4ff;
+    background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
+
+}
+.deceased-report { 
+    background-color: #d9d9d9;
+    background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);
+}
+.recover-report { 
+    background-color: #deebdd;
+    background-image: linear-gradient(315deg, #deebdd 0%, #bbdbbe 74%);
+}
+
+table td, table tr, table th{
+    background: transparent !important;
+    outline: none !important;
+}
+thead {
+    display: none !important;
+}
+table.dataTable.no-footer {
+    border-bottom: 0 !important;
+}
+
+
+/* Hide DATATABLE default search */
+.dataTables_filter{ display: none; }

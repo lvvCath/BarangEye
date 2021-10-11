@@ -1,0 +1,71 @@
+/* Highlight Side Nav: Dashboard */
+.fa-pie-chart{
+    border-radius: 0px 20px 20px 0px;
+    background-color: #045de9;
+    background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%); 
+}
+
+/* Body */
+.panel {
+    padding: 20px;
+}
+
+.panel .panel-heading{
+    padding: 20px 15px;
+    border-radius: 10px 10px 0 0;
+    margin: 0;
+}
+.panel .panel-heading .title{
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 40px;
+    margin: 0;
+}
+
+.panel .panel-body .table thead tr th{
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 12px;
+}
+.panel .panel-body .table tbody tr td{
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    padding: 10px 12px;
+    vertical-align: middle;
+    border: none;
+}
+
+.panel .panel-body .table tbody .action-list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.panel .panel-body .table tbody .action-list li{
+    display: inline-block;
+    margin: 0 5px;
+}
+.panel .panel-body .table tbody .action-list li a{
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+
+.panel .panel-body .table tbody .btn-action:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.panel .panel-body .table tbody .btn-action {
+    padding: 0;
+}
+.my-card{
+    position:absolute;
+    top:-20px;
+}
+
