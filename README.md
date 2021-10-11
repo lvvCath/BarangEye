@@ -3,7 +3,7 @@ Application Development and Emerging Technologies
 Website &amp; Mobile Project
 
 CODE - Z
-  MEMBERS:
+  MEMBERS: <br>
     SOFHIA ISABEL BESTIL, 
     ROLINE JASON DIGAL, 
     JOHN LAWRENCE TORRES, 
